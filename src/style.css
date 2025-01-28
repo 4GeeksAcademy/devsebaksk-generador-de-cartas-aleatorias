@@ -1,1 +1,93 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+.contenedor {
+  display: flex;
+  padding-top: 5rem;
+  background-color: green;
+  width: 100%;
+  height: 80rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.card {
+  background-image: white;
+  border-radius: 15px;
+  width: 20rem;
+  height: 30rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.card p {
+  font-size: 10rem;
+}
+
+.diamond:before {
+  content: "♦";
+  font-size: 5rem;
+  position: absolute;
+  color: red;
+  top: 0;
+  left: 15px;
+}
+.diamond:after {
+  content: "♦";
+  font-size: 5rem;
+  position: absolute;
+  color: red;
+  bottom: 0;
+  right: 15px;
+}
+
+.heart:before {
+  content: "♥";
+  font-size: 5rem;
+  position: absolute;
+  color: red;
+  top: 0;
+  left: 15px;
+}
+.heart:after {
+  content: "♥";
+  font-size: 5rem;
+  position: absolute;
+  color: red;
+  bottom: 0;
+  right: 15px;
+}
+
+.club:before {
+  content: "♣";
+  font-size: 5rem;
+  position: absolute;
+  color: black;
+  top: 0;
+  left: 15px;
+}
+.club:after {
+  content: "♣";
+  font-size: 5rem;
+  position: absolute;
+  color: black;
+  bottom: 0;
+  right: 15px;
+}
+
+.spade:before {
+  content: "♠";
+  font-size: 5rem;
+  position: absolute;
+  color: black;
+  top: 0;
+  left: 15px;
+}
+.spade:after {
+  content: "♠";
+  font-size: 5rem;
+  position: absolute;
+  color: black;
+  bottom: 0;
+  right: 15px;
+}
