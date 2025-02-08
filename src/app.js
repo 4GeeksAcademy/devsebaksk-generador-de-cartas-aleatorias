@@ -37,17 +37,19 @@ window.onload = function() {
   list.add(classPalo);
 };
 
-//let boton = document.getElementsByClassName("button");
-//document.addEventListener("click", myFunction);
-
 window.myFunction = function myFunction() {
   let nPalo = Math.floor(Math.random() * 4);
   let rndnumero = Math.floor(Math.random() * 13);
-  let carta = document.createElement("div");
+  let parafo = document.createElement("div");
+
+  const card = document.getElementById("card");
+  card.removeChild(card.firstElementChild);
+  card.removeAttribute("class");
+
+  parafo.innerHTML = numero[rndnumero];
+  document.getElementById("card").appendChild(parafo);
   let classPalo = palo[nPalo];
-  let clase = "card " + classPalo;
-  carta.className = clase;
-  //card.setAttribute("class", classPalo);
-  carta.innerHTML = "<div>" + numero[rndnumero] + "</div>";
-  document.getElementById("mesa").appendChild(carta);
+  const list = document.getElementById("card").classList;
+  list.add("card");
+  list.add(classPalo);
 };
